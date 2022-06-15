@@ -5,10 +5,10 @@ node{
          git 'https://github.com/talhashaikh5/call-center-forecast'
       }
 
-       stage('Initialize'){
-            def dockerHome = tool 'myDocker'
-            env.PATH = "${dockerHome}/bin:${env.PATH}"
-    }
+    //    stage('Initialize'){
+    //         def dockerHome = tool 'myDocker'
+    //         env.PATH = "${dockerHome}/bin:${env.PATH}"
+    // }
       
      stage('Build Docker Image'){         
            sh "docker build -t ${dockerImageName} ."
