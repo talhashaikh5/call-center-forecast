@@ -1,5 +1,5 @@
 node{
-      def dockerImageName = 'forecast_api_$JOB_NAME:$BUILD_NUMBER'
+      def dockerImageName = 'forecast_api'
       
       stage('SCM Checkout'){
          git 'https://github.com/talhashaikh5/call-center-forecast'
